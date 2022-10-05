@@ -3,20 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GuzzleHttp\Client as GuzzleClient;
 use Exception;
 
 class TweetApiController extends Controller
 {
     public function followers()
     {
-        $client = new \GuzzleHttp\Client();
+        $client = new GuzzleClient();
         $id = 2244994945;
         $endpoint = "https://api.twitter.com/2/users/{$id}/followers";
 
         try {
             $response = $client->request('GET', $endpoint, ['headers' => [
                 'authorization' =>
-                'Bearer aFNqQnNMaUMwWVI5Nm1OUkp3TndINUh2aEsxRWFJeXhva1Z3N3E3aVR4VEVoOjE2NjQ5NDc0Mzk4ODU6MToxOmF0OjE'
+                'Bearer eEg5dmdUdFVEbENtbHZWWVdTMndJaGJ4RlNTUTFJZjNYNFFYRi04d2hnS29sOjE2NjQ5NjI0ODYxOTI6MToxOmF0OjE'
             ]]);
             $statusCode = $response->getStatusCode();
 
@@ -42,14 +43,14 @@ class TweetApiController extends Controller
 
     public function tweets()
     {
-        $client = new \GuzzleHttp\Client();
+        $client = new GuzzleClient();
         $id = 2244994945;
         $endpoint = "https://api.twitter.com/2/users/{$id}/tweets";
 
         try {
             $response = $client->request('GET', $endpoint, ['headers' => [
                 'authorization' =>
-                'Bearer aFNqQnNMaUMwWVI5Nm1OUkp3TndINUh2aEsxRWFJeXhva1Z3N3E3aVR4VEVoOjE2NjQ5NDc0Mzk4ODU6MToxOmF0OjE'
+                'Bearer eEg5dmdUdFVEbENtbHZWWVdTMndJaGJ4RlNTUTFJZjNYNFFYRi04d2hnS29sOjE2NjQ5NjI0ODYxOTI6MToxOmF0OjE'
             ]]);
             $statusCode = $response->getStatusCode();
 
@@ -75,7 +76,7 @@ class TweetApiController extends Controller
 
     public function likes()
     {
-        $client = new \GuzzleHttp\Client();
+        $client = new GuzzleClient();
         $id = 2244994945;
         $endpoint1 = "https://api.twitter.com/2/users/{$id}/tweets";
         $count = 0;
@@ -83,7 +84,7 @@ class TweetApiController extends Controller
         try {
             $response1 = $client->request('GET', $endpoint1, ['headers' => [
                 'authorization' =>
-                'Bearer aHhUUDFtT29sSldBbFJoVm05ZktfbWNERDJkRVFEb3dQLV9rbTVXcWZBdVVZOjE2NjQ5NTQ0MTIwMTE6MTowOmF0OjE'
+                'Bearer eEg5dmdUdFVEbENtbHZWWVdTMndJaGJ4RlNTUTFJZjNYNFFYRi04d2hnS29sOjE2NjQ5NjI0ODYxOTI6MToxOmF0OjE'
             ]]);
             $statusCode1 = $response1->getStatusCode();
 
@@ -95,7 +96,7 @@ class TweetApiController extends Controller
                     try {
                         $response2 = $client->request('GET', $endpoint2, ['headers' => [
                             'authorization' =>
-                            'Bearer aHhUUDFtT29sSldBbFJoVm05ZktfbWNERDJkRVFEb3dQLV9rbTVXcWZBdVVZOjE2NjQ5NTQ0MTIwMTE6MTowOmF0OjE'
+                            'Bearer eEg5dmdUdFVEbENtbHZWWVdTMndJaGJ4RlNTUTFJZjNYNFFYRi04d2hnS29sOjE2NjQ5NjI0ODYxOTI6MToxOmF0OjE'
                         ]]);
                         $statusCode2 = $response2->getStatusCode();
 
