@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/followers', 'App\Http\Controllers\TweetApiController@followers');
+Route::get('/tweets', 'App\Http\Controllers\TweetApiController@tweets');
