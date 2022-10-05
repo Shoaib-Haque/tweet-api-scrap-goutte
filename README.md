@@ -12,12 +12,12 @@
     <li><strong>Adding guzzle</strong><br>composer require guzzlehttp/guzzle</li>
     <li><strong>Adding laravel-goutte</strong><br>composer require weidner/goutte</li>
     <li><strong>Register it in config/app.php and provide an alias for its Facade</strong><br>
-        in providers<br>
+        <b>in providers</b><br>
         /*<br>
          * Package Service Providers...<br>
          */<br>
         Weidner/Goutte/GoutteServiceProvider::class,<br>
-        in aliases<br>
+        <b></b><br>
         'Goutte' => Weidner\Goutte\GoutteFacade::class,<br>
     </li>
 </ol>
