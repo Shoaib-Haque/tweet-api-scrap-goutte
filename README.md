@@ -16,8 +16,9 @@
         /*<br>
          * Package Service Providers...<br>
          */<br>
-        Weidner/Goutte/GoutteServiceProvider::class,<br>
+        weidner\goutte\GoutteServiceProvider::class,<br>
         <b>in aliases</b><br>
         'Goutte' => Weidner\Goutte\GoutteFacade::class,<br>
     </li>
+    <li>Write route and controller/methods</li>
 </ol>
