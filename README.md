@@ -16,7 +16,7 @@
         /*<br>
          * Package Service Providers...<br>
          */<br>
-        weidner\goutte\GoutteServiceProvider::class,<br>
+        Weidner\Goutte\GoutteServiceProvider::class,<br>
         <b>in aliases</b><br>
         'Goutte' => Weidner\Goutte\GoutteFacade::class,<br>
     </li>
