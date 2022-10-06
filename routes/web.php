@@ -22,3 +22,4 @@ Route::get('/tweets', 'App\Http\Controllers\TweetApiController@tweets');
 Route::get('/likes', 'App\Http\Controllers\TweetApiController@likes');
 
 Route::get('/scrap', 'App\Http\Controllers\ScrapController@scrap');
+Route::get('/scrap-kazeno', 'App\Http\Controllers\ScrapController@scrapKazeno');
