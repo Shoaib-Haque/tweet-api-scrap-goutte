@@ -20,5 +20,5 @@
         <b>in aliases</b><br>
         'Goutte' => Weidner\Goutte\GoutteFacade::class,<br>
     </li>
-    <li>Write route and controller/methods</li>
+    <li><strong>Write route and controller/methods</strong></li>
 </ol>
