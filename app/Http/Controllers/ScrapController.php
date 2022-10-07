@@ -50,8 +50,7 @@ class ScrapController extends Controller
                         //dump($node4->text());
                         echo $node4->text()."<br>";
                     });
-                    echo "<br>";
-                    $count == 5 ? exit : "";
+                    echo $count == 5 ? exit : "<br>";
                 });
             });
         });
