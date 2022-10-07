@@ -10,11 +10,11 @@
         <div class="row p-5">
             <div class="col-12">
                 <ul>
-                    <li><a href="/followers">followers</a></li>
-                    <li><a href="/tweets">tweets</a></li>
-                    <li><a href="/likes">likes</a></li>
-                    <li><a href="/scrap">scrap</a></li>
-                    <li><a href="/scrap-kazeno">scrap kazeno</a></li>
+                    <li><a href="/followers">tweet-api-user-followers</a></li>
+                    <li><a href="/tweets">tweet-api-user-tweets</a></li>
+                    <li><a href="/likes">tweet-api-tweet-likes</a></li>
+                    <li><a href="/scrap-duckduckgo">scrap-duckduckgo</a></li>
+                    <li><a href="/scrap-kazeno">scrap-kazeno</a></li>
                 </ul>
             </div>
         </div>
