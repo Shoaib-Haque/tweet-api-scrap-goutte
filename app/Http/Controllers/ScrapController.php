@@ -46,9 +46,9 @@ class ScrapController extends Controller
                     $count++;
                     echo $count.". ".$href4;
                     $crawler4 = $goutteClient->request('GET', $href4);
-                    $crawler4->filter("div.ie5 table.style_table tbody tr td:nth-child(1).style_td a[rel='nofollow']")->each(function ($node4) {
-                        dump($node4->text());
-                        //dump($node4->attr('href'));
+                    $crawler4->filter("div.ie5 table.style_table tbody tr td:nth-child(2).style_td a[rel='nofollow']")->each(function ($node4) {
+                        //dump($node4->text());
+                        dump($node4->attr('href'));
                         //echo $node4->text()."<br>";
                     });
                     echo $count == 5 ? exit : "<br>";
