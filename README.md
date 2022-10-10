@@ -6,7 +6,7 @@
     <a href="https://medium.com/@digitaldaswani/web-scraping-with-laravel-ab5f1c5f00a5">Web Scraping with Laravel</a></li>
 </ol>
 
-<h1>Todo</h1>
+<h1>From scratch</h1>
 <ol type="1">
     <li><strong>Adding laravel project</strong></li>
     <li><strong>Adding guzzle</strong><br>composer require guzzlehttp/guzzle</li>
@@ -21,4 +21,14 @@
         'Goutte' => Weidner\Goutte\GoutteFacade::class,<br>
     </li>
     <li><strong>Write route and controller/methods</strong></li>
+</ol>
+
+<h1>Clone</h1>
+<ol type="1">
+    <li>Clone the project from git<br> git clone https://github.com/Shoaib2018/tweet-api-scrap-goutte.git</li>
+    <li>composer install</li>
+    <li>make a copy of .env.example and rename if .env<br> copy .env.example .env</li>
+    <li>Generate application encryption key<br> php artisan key:generate</li>
+    <li>php artisan cache:clear<br> php artisan config:clear</li>
+    <li>php artisan serve</li>
 </ol>
