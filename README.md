@@ -25,11 +25,12 @@
 
 <h1>Clone</h1>
 <ol type="1">
-    <li>Clone the project from git<br> git clone https://github.com/Shoaib2018/tweet-api-scrap-goutte.git</li>
-    <li>change directory<br> cd tweet-api-scrap-goutte</li>
+    <li><strong>Clone the project from git</strong><br> 
+        git clone https://github.com/Shoaib2018/tweet-api-scrap-goutte.git</li>
+    <li><strong>change directory</strong><br> cd tweet-api-scrap-goutte</li>
     <li>composer install</li>
-    <li>make a copy of .env.example and rename it .env<br> copy .env.example .env</li>
-    <li>Generate application encryption key<br> php artisan key:generate</li>
+    <li><strong>make a copy of .env.example and rename it .env</strong><br> copy .env.example .env</li>
+    <li><strong>Generate application encryption key</strong><br> php artisan key:generate</li>
     <li>php artisan cache:clear<br> php artisan config:clear</li>
     <li>php artisan serve</li>
 </ol>
